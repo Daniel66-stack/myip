@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Permintaan Akses</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Permintaan Akses</h1>
+    <p id="ip-request-text">Alamat IP [xxx.xxx.xxx.xxx] meminta akses ke sistem Anda.</p>
+    <div class="buttons">
+      <button id="accept-btn" class="accept">Terima</button>
+      <button id="decline-btn" class="decline">Tolak</button>
+    </div>
+    <p id="response-text"></p>
+  </div>
+
+  <div class="list-buttons">
+    <button id="show-accepted" class="accept">Lihat IP Diterima</button>
+    <button id="show-declined" class="decline">Lihat IP Ditolak</button>
+  </div>
+  <ul id="accepted-ips" class="ip-list" style="display: none;"></ul>
+  <ul id="declined-ips" class="ip-list" style="display: none;"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
